@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      table, td {
+        border:1px solid black;
+      }
+    </style>
+</head>
+<body>
+    <table>
+    <tbody>   
+        <tr>
+            <td> January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$80</td>
+
+        </tr>
+    </tbody>
+    </table>
+    <tfoot>
+        <tr>
+        <td>Sum</td>
+        </tr>
+    </tfoot>
+    <table>
+        <thead>
+          <tr>
+            <td>Month</td>
+            <td>Savings</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>$180</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <br><!---How to make forms-->
+
+      <form><!--inline because its next to eachother-->
+        <label for="username">NAME</label>
+        <input type="text" name="username" id="First" placeholder="User Name" required>
+        <br>
+        <label for="last">Last:</label>
+        <input type="text" name="username" id="last" placeholder="User Last Name" required>
+        <input type="password" name="password" id="pass" placeholder="Password" required>
+        <br>
+        <input type="submit" >
+      </form>
+
+      <!--How to make Tables and forms-->
+      <h2>Tables & Forms</h2>
+
+      <form method="GET" action="">
+       <table>
+        <tbody>
+          <tr>
+          <td>Labels</td>
+          <td>Inputs</td>
+          </tr>
+
+          <tr>
+              <td><label for="name">Name:</label></td>
+              <td><input type="text" name="name" id="name" placeholder="Your First name"></td>
+
+              <tr>
+              <td><label for="l-name">Last Name:</label></td>
+              <td><input type="text" name="l-name" id="l-name" placeholder="Your Last Name"></td>
+              </tr>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+</body>
+</html>
