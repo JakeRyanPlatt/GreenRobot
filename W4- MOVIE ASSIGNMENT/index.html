@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="shey">
+    <meta name="description" content="week 4 | movie assignment">
+
+
+    <title>WEEK 4 | ABOUT</title>
+    <!-- in-document styling-->
+     <style>
+       
+        div {
+            border:1px solid darkred;
+            padding:10px;
+            margin:10px;
+        }
+        body {
+            font-family: Arial, sans-serif; 
+            background-color: black;
+            margin: 0;
+            padding: 20px;
+        }
+        #header {
+            text-align: center;
+            color: #ba2727;
+            margin-bottom: 0;
+        }
+
+        #nav a {
+        display: inline-block;
+        margin: 10px; /* Space between links */
+        padding: 10px 20px; /* Space inside the border */
+        text-decoration: none; /* Remove the underline from links */
+        color: red; /* Make the link text red */
+        border: 2px solid white; /* Black border around each link */
+        border-radius: 5px;
+        font-weight: bold;
+        }
+        #nav {
+        text-align: center;
+        margin-bottom: 20px;
+        }
+        .centered {
+            text-align: center; /* Centers my text horizontally */
+        }
+        .centered-image {
+            display: block; /* Ensures the image is treated as a block element */
+            margin-left: auto;
+            margin-right: auto; /* Centers the image horizontally */
+        }
+        #nav a:hover {
+        background-color: rgb(150, 13, 13); /* Change background to black when hovered */
+        color: white; /*text color when hovered overr it*/
+        }
+        #content h2 {
+        color: red; /* Changes the font color to red in my content area*/
+        padding-bottom: 10px;
+        }
+        .red-text {
+        color:#ba2727
+        }
+        #footer {
+            color: red;
+        }
+        .trailer-container {
+            text-align: center; /* Centers my trailer horizontally */
+            margin-top: 20px; 
+        }
+        iframe {
+            border: none; /*had to add this to remove border on frame*/
+        }
+
+     </style>
+</head>
+<body>
+
+    <!--#container-->
+    <div id="container">
+
+        <!--#HEADER-->
+        <div id="header">
+        
+            <h1><u>😈Insidious😈</u></h1>
+            <h4><b>The nightmare isn't over..</b></h4>
+            
+        </div><!--/#header-->
+
+            <!--#NAV-->
+            <div id="nav">
+
+                <a href="index.html" class="btn">ABOUT</a>
+                <a href="cast.html" class="btn">CAST</a>
+                <a href="review.html" class="btn">REVIEW</a>
+
+            </div> <!--/#nav-->
+
+
+        <hr>
+       <!--#CONTENT-->
+        <div id="content">
+            <h2 class="centered">All About <u>Insidious</u></h2>
+
+                <!-- a brief synopsis plus text to be red-->
+                <h3 class="red-text"><b>Insidious</b> is a creepy horror movie from <i>2011</i> that really gets under your skin.<br> 
+                    Its about a family that starts experiencing terrifying supernatural events after their son,<br> <b>Dalton</b>, falls into a deep coma.
+                    They soon realize that their house is <u>haunted</u> and that something sinister is after them.<br>
+                    As they dig deeper, they find out there's a <b>whole other dimension called "The Further"</b> thats involved.<br> 
+                    The movie is great at building suspense and has some seriously frightening moments.</h3>
+
+                <!--poster image or similar-->
+                
+                <img src="images/insidiousdevil.jpg" alt="Red Door devil" width="650" class="centered-image">
+
+
+                <br>
+                <div class="trailer-container">
+                    <h2 class="red-text"><b>WATCH THE TRAILER</b></h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/62rpZcMYa0A?si=BQSchqvOLEFjpPmq" 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <!--movie info div with class="info"-->
+                <div class="info" style="border:none;">
+
+                    <p class="red-text"><b>Company Credits:</b> Universal Pictures, Amblin Entertainment</p>
+                    <p class="red-text"><b>Release Date:</b> April 1, 2011</p>
+                    <p class="red-text"><b>Genres:</b> Horror, Thriller</p>
+                    <p class="red-text"><b>Rating:</b> PG-13</p>
+                    <p class="red-text"><b>Running Time:</b> 103 minutes</p>
+                    <!--add rest of credits below-->
+                </div>
+
+        </div><!--/#content-->
+
+        <hr>
+
+        <!--#FOOTER-->
+        <div id="footer">
+            <a href="#header">Back To Top</a>
+
+            <p>&copy; Sheila Silva | SE111 |202440</p>
+
+        <!--
+            VALIDATION SCREENSHOT IMAGE FOR *THIS* PAGE BELOW -->
+            
+            <img src="images/validationmovie1.png" alt="w3c validation screenshot of this page's HTML code" style="width: 90%">
+
+        </div>
+        <!--/#footer-->
+
+    </div>
+
+</body>
+</html>
