@@ -78,7 +78,7 @@
           <td>Labels</td>
           <td>Inputs</td>
           </tr>
-
+          <!--TR means table row-->
           <tr>
               <td><label for="name">Name:</label></td>
               <td><input type="text" name="name" id="name" placeholder="Your First name"></td>
@@ -86,8 +86,76 @@
               <tr>
               <td><label for="l-name">Last Name:</label></td>
               <td><input type="text" name="l-name" id="l-name" placeholder="Your Last Name"></td>
+              <td> 
+              </td>
               </tr>
             </tr>
+            <!--rows="10" cols="10" to make rows smaller or wide-->
+
+            <tr>
+            <td>
+              <textarea name="comments" id="comments" placeholder="Hellow world" 
+              style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"></textarea>
+            </td>
+            </tr>
+
+            <!-- how to do drop down-->
+            <td> 
+              <label for="fave color">Pick your favorite color:</label>
+            </td>
+
+            <td>
+              <select name="favecolor" id="favecolor">Pick your color
+              <option value="red">RED</option>
+              <option value="red">RED</option>
+              <option value="red">RED</option>
+              <option value="red">RED</option>
+            </td>
+          </select>
+
+
+            <!--Radio buttons-->
+            <tr>
+              <td>
+                <label for="study">program of study</label></td>
+
+              <td>  <!--set is grouped by matching name-->
+                <input type="radio" name="study" value="SE">software engineer<br>
+                <input type="radio" name="study" value="CYB">cybersecurtity<br>
+                <input type="radio" name="study" value="NE">network engineer<br>
+              </td>
+            </tr>
+
+            <!--how to do check boxes-->
+            <tr>
+              <td>
+                <label for="vechile">SELECT your car</label>
+              </td>
+
+              <td>
+                <input type="checkbox" name="vechile" value="car">CAR <br>
+                <input type="checkbox" name="vechile" value="car">CAR <br>
+                <input type="checkbox" name="vechile" value="car">CAR <br>
+
+              </td>
+            </tr>
+            <!-- how to do date-->
+            <tr> 
+              <td> 
+                <label for="date">DATE</label>
+              </td>
+
+              <td>
+                <input type="date" name="date" id="date" value="2024-08-01">Select date
+              </td>
+            </tr>
+
+            <td></td>
+            <td>
+              <input type="submit" value="SUBMIT">
+
+          </td>
+
           </tbody>
         </table>
       </form>
