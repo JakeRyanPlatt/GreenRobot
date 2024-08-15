@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Sheila" content="Your Name Here">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <!--Build your Table and Form here-->
+    <h1>Birthday Party Registration Form</h1>
+    <thead>
+    <table>
+        <tr>
+            <td><b>Labels</b></td>
+            <td><b>Form Fields</b></td>
+        </tr>
+    </thead>
+    <tbody>
+    <form>
+    <tr>
+        <td>
+            <label for="gfirst">Parent/Guardian Name</label>
+        </td>
+        <td>
+            <input type="text" name="gfirst" id="g-first" placeholder="First name" maxlength="20" required><br>
+            <input type="text" name="gfirst" id="g-last" placeholder="Last Name" maxlength="20" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="cfirst">Child's First Name</label>
+        </td>
+        <td><input type="text" name="cfirst" id="c-last" placeholder="Child's First Name" required></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="age">Child's Age</label>
+        </td>
+        <td><input type="number" value="3"></td>
+    </tr>
+    <tr>
+        <td>
+            <h2>Date And Time</h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="date">Date</label>
+        </td>
+        <td>
+            <input type="date" name="date" id="date" value="" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="Start Time">Start Time</label>
+        </td>
+        <td>
+            <input type="time" name="time" id="time" value="" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="guests">Number of Guests</label>
+        </td>
+        <td>
+            <input type="number" name="guests" value="5" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h2>Food</h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="size">Size</label>
+        </td>
+        <td>
+            <input type="radio" name="size">sm
+            <input type="radio" name="size">med
+            <input type="radio" name="size">lg
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="drinks">Drinks</label>
+        </td>
+        <td>
+            <input type="checkbox" name="drink1" unchecked="true" value="Coke">
+            <label for="drink1">Coke<label><br>
+            <input type="checkbox" name="drink2" unchecked="true" value="Sprite">
+            <label for="drink2">Sprite<label><br>
+            <input type="checkbox" name="drink3" unchecked="true" value="Fruitpunch">
+            <label for="drink3">Fruit Punch<label><br>
+            <input type="checkbox" name="drink4" unchecked="true" value="Lemonade">
+            <label for="drink4">Lemonade<label><br>
+            <input type="checkbox" name="drink5" unchecked="true" value="Iced Tea">
+            <label for="drink5">Iced Tea<label><br>
+        </td>
+    </tr>
+    </form>
+    </tbody>
+</table>
+</body>
+</html>
