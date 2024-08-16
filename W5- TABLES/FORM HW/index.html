@@ -23,7 +23,7 @@
         </tr>
     </thead>
     <tbody>
-    <form>
+    <form method="GET" action="confirm.html">
     <tr>
         <td>
             <label for="gfirst">Parent/Guardian Name</label>
@@ -84,9 +84,9 @@
             <label for="size">Size</label>
         </td>
         <td>
-            <input type="radio" name="size">sm
-            <input type="radio" name="size">med
-            <input type="radio" name="size">lg
+            <input type="radio" name="size" required>sm
+            <input type="radio" name="size" required>med
+            <input type="radio" name="size" required>lg
         </td>
     </tr>
     <tr>
@@ -106,6 +106,48 @@
             <label for="drink5">Iced Tea<label><br>
         </td>
     </tr>
+    <tr>
+        <td>
+            <label for="cake">Cake</label>
+        </td>
+        <td>
+            <select name="cake">
+            <option value=""></option>
+            <option value="Chocolate" required>Chocolate</option>
+            <option value="Vanila" required>Vanilla</option>
+            <option value="Bring Own" required>I'll bring my own</option>
+            </select></td>
+    </tr>
+    <tr>
+        <td>
+            <h2>Decorations</h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="Colors">Color Scheme</label>
+        </td>
+        <td>
+            <input type="color" name="Colors" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="comments">Additional Comments</label>
+        </td>
+        <td>
+            <textarea
+                name="comments" id="comments" placeholder="Please add any additional comments here.." required></textarea>
+            </textarea>
+        </td>
+    </tr>
+</tr>
+
+<td></td>
+<td>
+  <input type="submit" value="SUBMIT" required>
+
+</td>
     </form>
     </tbody>
 </table>
