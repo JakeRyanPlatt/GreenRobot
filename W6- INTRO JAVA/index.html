@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Sheys demo">
+    <meta name="description" content="week 6 js intro">
+
+    <title>W6 | JS INTRO</title>
+</head>
+<body>
+    
+    <!--include some bit of html elements when first getting started-->
+    <h1>Week 6 Intro demo | Javascript</h1>
+
+    <!--show use of button element with onclick event-->
+    <button onclick="hello()">Say Hi :]</button>
+
+   <!--In document javascript element at the END of HTML content, before the body close-->
+   <script>
+    //single line comment in JS, double forward line to make notes
+    
+    //create some variables --> JS requires DECLARATION: keyword 'var'
+    var num1 = 10
+    var num2 =27
+    /*
+    var sum = num1 + num2 
+
+    //console.log() -- used for development; NOT for a user
+    console.log(sum)
+    console.log(num1, num2, sum) //shows 
+    console.log("the sum of", num1, "+", num2, "is", sum) //shows as 10+27 is 37
+    console.log(`The sum of ${num1} + ${num2} is ${sum.toFixed(2)}`) //another way to write it -- tofixed method will fix the value to a specific decimal place makes it into decimal.
+
+    //alert() allows for a pop-up in the browser page to display data
+    //alert() --> OUTPUT to user [print()]
+    alert(`hello world!\nThe sum is $${sum.toFixed(2)}`) // backslash line "n" will give new line
+
+
+    console.log(`alert complete.`)// with a pop up we have to interact or hit ok before it shows on the console.
+
+    //prompt() allows for a pop-up with a text box for data input by user
+    //prompt() --> INPUT to user [input()]
+    var name = prompt(`Enter your name: `)
+
+    console.log(`prompt complete: ${name}`) //to show what name they gave and show in console.
+
+    alert(`Hi there ${name}!`)
+
+    //----------------------------------------------------------------------------- assignment-----
+    //var hours = Number(prompt(`Enter Your Hours Worked: `)) ---> then console.log(`${hours.toFixed(1)} you can put hours in there.
+    var hours = prompt(`Enter Your Hours Worked: `)
+
+    var gross = hours * 15 // multiplying hours * 15
+    var taxA = gross * 0.2
+    var net = gross - taxA
+
+    console.log(`${hours} * 15 = $${gross.toFixed(2)}`)//hours is not truly known as a # cannot apply .toFixed to it. Only when you cast the prompt with number line 51
+
+    */
+
+    // demo 2. | Conditions in Javascript
+
+    var num = Number(prompt(`Enter a number`))
+
+    if (num % 2 === 0)
+    {
+        alert(`The number is EVEN!)
+    }
+    else
+    {
+        alert(`The Number is ODD!`)
+    }
+
+    function hello()
+    {
+        console.log(`button clicked!`)
+        alert(`Hello world!`)
+    }
+
+    
+
+    </script>
+
+    
+</body>
+</html>
