@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W7D2 | Javascript Demo</title>
+</head>
+<body>
+
+    <h1>W7D2 - Javascript Selector & Event Demo</h1>
+
+    <form>
+
+        <table>
+
+            <tr>
+                <!--left side: questions-->
+                <td>
+                    <label for="first" class="questions">FIRST: </label>
+                </td>
+
+                <!--right side: input values-->
+                <td>
+                    <input type="text" name="first" id="first">
+
+                </td>
+            </tr>
+
+            <tr>
+                <!--left side: questions-->
+                <td>
+                    <label for="last" class="questions">LAST: </label>
+                </td>
+
+                <!--right side: input values-->
+                <td>
+                    <input type="text" name="last" id="last">
+
+                </td>
+            </tr>
+
+            <tr>
+                <!--left side: questions-->
+                <td>
+                    <label for="age" class="questions">AGE: </label>
+                </td>
+
+                <!--right side: input values-->
+                <td>
+                    <input type="text" name="age" id="age">
+
+                </td>
+            </tr>
+
+            
+            <tr>
+                <!--left side: questions-->
+                
+                <td>
+                    <br>
+                    <br>
+                   <input type="button" id="enter-button" value="ENTER">
+                </td>
+
+                <!--right side: input values-->
+                <td>
+                    
+
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <br>
+    <br>
+
+    <!--a div to hold some info from the form-->
+
+    <h2 id="hello">Hello</h2>
+
+    <div id="info" style="border:1px solid black; width:500px; height:200px;">
+    
+    </div><!--# info-->
+
+    <br>
+    <br>
+    <br>
+
+    <!--not just buttons can have click events!-->
+
+    <p id="me">
+        Click!
+    </p>
+
+    <p id="you">
+        Click!
+    </p>
+
+    <input type="button" id="submit" value="COOL STUFF!">
+
+    <br><br><br><br><br>
+    <p>end</p>
+    
+    
+    <!--IN-DOCUMENT JAVASCRIPT BELOW-->
+    <script>
+        //We write JS in here
+
+        //selecting elements from the HTML document --> 'document' current HTML file
+        //global variable: accessible everywhere after its creation
+        var body = document.querySelector(`body`)
+
+        console.log(body)// means we stored the entire object and select it all
+
+        //create a new variable to hold the new HTML element
+        var newP = ``
+        newP += `<p>` //newP = newP + `<p>`
+        newP += `Hello world this content was added to the page with <b>JavaScript!</b>`
+        newP += `</p>`
+
+        console.log(newP)
+
+        //add the new HTML element to the page - this will add the END of the BODY
+        body.innerHTML += newP //body.innerHTML = body.innerHTML + newP
+        //body.style.color = `pink` is to make the body color change
+
+        //set up an actual event so that when a button is clicked, info is written to the page (#info)
+        //FIRST: add event listener for event to the element
+        //adding an event listener to the #enter-button at the end of the mini form
+        document.querySelector(`#enter-button`).addEventListener(`click`,alertInfo) //means we are looking at an ID instead of a tag selecting enter-button on line 62
+        //^^.addEventListener(EVENT TYPE, FUNCTION THAT RUNS ONCE EVENT)
+
+        //event based functions MUST include the EVENT PARAMETER (e/ev/event)
+        //alertInfo() definition below
+        function alertInfo(event)
+        {
+            //local vas: their value only exists INSIDE of the functions; they are only accesible {in here}
+            //the local vars below will hold the VALUES from the mini form
+
+            var fname = document.querySelector(`#first`).value 
+            var lname = document.querySelector(`#last`).value
+            var age = Number(document.querySelector(`#age`).value) //cant do math with strings!
+
+            console.log(fname, lname, age)
+            
+            //basic control flow for an age alert
+            if (age >= 18)
+        {
+            alert(`You ARE old enough to vote!`)
+        }
+        else
+        {
+            alert(`You are NOT old enough to vote!`)
+        }
+
+        //select the Hello element on the page and store it; and add the users name to the hello message
+        var hello = document.querySelector(`#hello`)
+
+        hello.innerHTML += ` ${fname} ! `
+
+        //store the info div to a variable.
+        var info = document.querySelector(`#info`)
+
+        //calculate dog years
+        var dog_age = (age * 7).toFixed(1) //stores value as rounded decimal; will change value if more than 1 decimal place
+
+        //test values in console
+        console.log(`YOUR AGE: ${age} human years; ${dog_age} dog years`)
+
+        //add the age message to the #info div as content in the HTML page
+        info.innerHTML += `<p> YOUR AGE: ${age} human years; ${dog_age} dog years`
+        
+        //add dog_age to global body
+        body.innerHTML += `<br><p> YOUR Are ${dog_age} years old`
+
+        }//alertInfo() CLOSE
+
+        //global variables: the ones declared below will only be accessible to the function AFTER they have been declared
+        var me = document.querySelector(`#me`)
+        var you = document.querySelector(`#you`)
+
+        //add event listener to non-button items - all elements are fair game
+        me.addEventListener(`click`, clicked)
+        you.addEventListener(`click`, clicked)
+
+        function clicked(event)
+        {
+            console.log(`clickedRed() reached!`)
+            me.style.color = `Red` 
+            me.style.fontSize = `40px`
+        }
+
+        function clickedGreen(event)
+        {
+            console.log(`clickedGreen() reached!`)
+            you.style.color = `Green` 
+            you.style.fontSize = `40px`
+        }
+
+        var button = document.querySelector(`#submit`)
+
+        //demoing an anonymous function (function withouth a name: immediatly defined)
+        //we use these when the functio will not be reused outside of the specific event
+        button.addEventListener(`click`,function(event){
+            console.log(event)
+        })
+	</script>
+	
+</body>
+</html>
