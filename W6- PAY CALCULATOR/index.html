@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W6 | PAY CALCULATOR</title>
+</head>
+<body>
+    <h1>Week 6 | PAY CALCULATOR</h1>
+    <button onclick="hello()">Say Hi :]</button> <!-- Makes button say hello when clicked -->
+
+    <script>
+        var hours = Number(prompt("Enter your hours worked:"));
+        var hourlyrate = 15; // The fixed rate provided
+
+        var gross = hours * hourlyrate;
+        var tax = gross * 0.2; // Tax is 20%
+        var net = gross - tax;
+
+        alert("Gross Pay: $" + gross.toFixed(2) + 
+              "\nUncle Sam's Share: $" + tax.toFixed(2) + 
+              "\nNet Pay: $" + net.toFixed(2));
+
+        var num = Number(prompt("Enter a number"));
+        if (num % 2 === 0) {
+            alert("The number is EVEN!");
+        } else {
+            alert("The number is ODD!");
+        }
+
+        function hello() {
+            alert("Hello world!");
+        }
+    </script>
+</body>
+</html>
