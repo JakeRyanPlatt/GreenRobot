@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="author" content="Sheila silva, known as Shey">
+    <meta name="description" content="W9 escape assignment">
+
+    <title>week 9 escape assignment</title>
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -49,11 +52,15 @@
         <script>
     
             //Query select the `start` table cell
+            var startCell = document.querySelector(`#start`)
           
 			//use console.dir to show it in the console.
+            console.dir(startCell);
+            alert(`im about to change the background color to where im standing now!`);
       
             /*change the `exit` cell's style.backgroundColor to `red` in one line of code without using it's id. 
             You must use the .parentElement and children lists of the `start` cell to do this*/
+            startCell.parentElement.parentElement.children[1].children[4].style.backgroundColor = 'red';
             
         </script>
     </main>
