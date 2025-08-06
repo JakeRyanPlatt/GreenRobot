@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Green Robot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-image: url('images/repairstore.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      background-blend-mode: overlay;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 30px;
+      max-width: 95%;
+      margin: auto;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .product-card p {
+      font-size: 14px;
+      color: #555;
+      margin: 0 0 10px;
+    }
+
+    .product-card span {
+      display: block;
+      font-weight: bold;
+      color: #4CAF50;
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 style="font-size: 48px; font-weight: bold;">Green Robot</h1>
+    <p style="font-size: 20px; font-weight: 500;">Refurbished Tech & Gadgets at Great Prices</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="shop.html">Shop</a>
+  </nav>
+
+  <main>
+    <h2>Shop Our Refurbished Deals</h2>
+
+    <div class="products">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Android+Phone" alt="Android Phone">
+        <h3>Android Phone</h3>
+        <p>Unlocked, tested, like new.</p>
+        <span>$99</span>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Chromebook" alt="Chromebook">
+        <h3>Chromebook</h3>
+        <p>Perfect for school & work.</p>
+        <span>$129</span>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Smartwatch" alt="Smartwatch">
+        <h3>Smartwatch</h3>
+        <p>Tracks fitness & sleep.</p>
+        <span>$49</span>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Earbuds" alt="Earbuds">
+        <h3>Bluetooth Earbuds</h3>
+        <p>Wireless with charging case.</p>
+        <span>$39</span>
+      </div>
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Tablet" alt="Tablet">
+        <h3>Android Tablet</h3>
+        <p>Lightweight & fast performance.</p>
+        <span>$89</span>
+      </div>
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Keyboard" alt="Keyboard">
+        <h3>Bluetooth Keyboard</h3>
+        <p>Slim & rechargeable design.</p>
+        <span>$25</span>
+      </div>
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Monitor" alt="Monitor">
+        <h3>Refurbished Monitor</h3>
+        <p>Full HD, perfect condition.</p>
+        <span>$79</span>
+      </div>
+      <!-- Product 8 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Webcam" alt="Webcam">
+        <h3>1080p Webcam</h3>
+        <p>Great for video calls & streaming.</p>
+        <span>$35</span>
+      </div>
+      <!-- Product 9 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Gaming+Mouse" alt="Gaming Mouse">
+        <h3>Gaming Mouse</h3>
+        <p>Ergonomic & customizable buttons.</p>
+        <span>$29</span>
+      </div>
+      <!-- Product 10 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Speakers" alt="Speakers">
+        <h3>USB Speakers</h3>
+        <p>Compact with deep bass.</p>
+        <span>$45</span>
+      </div>
+      <!-- Product 11 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Flash+Drive" alt="Flash Drive">
+        <h3>64GB Flash Drive</h3>
+        <p>Fast, portable, plug-and-play.</p>
+        <span>$12</span>
+      </div>
+      <!-- Product 12 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Laptop" alt="Laptop">
+        <h3>Refurbished Laptop</h3>
+        <p>Upgraded storage & RAM.</p>
+        <span>$199</span>
+      </div>
+      <!-- Product 13 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Charging+Pad" alt="Charging Pad">
+        <h3>Wireless Charging Pad</h3>
+        <p>Fast charge for phones & buds.</p>
+        <span>$18</span>
+      </div>
+      <!-- Product 14 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Power+Bank" alt="Power Bank">
+        <h3>Portable Power Bank</h3>
+        <p>10,000mAh for on-the-go power.</p>
+        <span>$22</span>
+      </div>
+      <!-- Product 15 -->
+      <div class="product-card">
+        <img src="https://placehold.co/250x150?text=Phone+Case" alt="Phone Case">
+        <h3>Clear Phone Case</h3>
+        <p>Scratch-resistant, sleek design.</p>
+        <span>$10</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Green Robot. All rights reserved.
+  </footer>
+
+</body>
+</html>
